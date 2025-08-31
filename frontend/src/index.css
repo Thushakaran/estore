@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset or minimal global styles only. Remove Tailwind directives. */
+
+/* You can add custom global styles here if needed. */
+
+/* Ensure proper font loading */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+/* Base styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
+
+/* Debug styles - remove these after confirming everything works */
+.debug * {
+  outline: 1px solid red;
+}
+
+/* Ensure images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ensure proper button styling */
+button {
+  cursor: pointer;
+}
+
+/* Ensure proper link styling */
+a {
+  text-decoration: none;
+  color: inherit;
+}
